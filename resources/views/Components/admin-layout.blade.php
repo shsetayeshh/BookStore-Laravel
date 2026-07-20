@@ -25,7 +25,6 @@
         </aside>
 
         <main class="w-3/4 bg-slate-800 rounded-2xl p-6 border border-slate-700 min-h-[80vh]">
-            <!-- این دقیقا همون جاییه که محتوا باید بیاد -->
             @yield('content')
         </main>
     </div>

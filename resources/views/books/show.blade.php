@@ -1,6 +1,5 @@
 <x-layout title="{{ $book->title }} | کتابسرا">
 
-    <!-- بخش نانruta (مسیر کاربر) -->
     <nav class="text-sm text-gray-500 mb-8 flex items-center gap-2">
         <a href="/" class="hover:text-amber-600 transition-colors">خانه</a>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -12,12 +11,10 @@
     <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2">
 
-            <!-- سمت راست: عکس کتاب -->
             <div class="bg-gray-100 p-8 flex items-center justify-center">
                 <img src="{{ $book->image }}" alt="{{ $book->title }}" class="max-h-[500px] w-auto object-contain rounded-xl shadow-2xl">
             </div>
 
-            <!-- سمت چپ: اطلاعات کتاب -->
             <div class="p-10 md:p-16 flex flex-col justify-center">
 
                 <h1 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 leading-tight">{{ $book->title }}</h1>
@@ -40,7 +37,6 @@
                         {{ session('success') }}
                     </div>
                     @endif
-                    <!-- تبدیل دکمه به فرم برای ارسال اطلاعات -->
                     <form action="{{ route('cart.add', $book->id) }}" method="POST">
                         @csrf
                         <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-lg shadow-amber-500/30 flex items-center gap-2">

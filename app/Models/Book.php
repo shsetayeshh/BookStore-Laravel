@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    // هر کتاب متعلق به یه دسته بندیه
 public function category()
 {
     return $this->belongsTo(Category::class);

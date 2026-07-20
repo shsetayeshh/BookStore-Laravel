@@ -1,6 +1,5 @@
 <x-layout title="{{ $category->name }} | کتابسرا">
 
-    <!-- هدر دسته بندی -->
     <div class="bg-gradient-to-l from-amber-500 to-amber-600 rounded-2xl p-8 mb-10 text-white shadow-lg">
         <h1 class="text-3xl font-black mb-2">دسته‌بندی: {{ $category->name }}</h1>
         <p class="text-amber-100">می‌تونی در اینجا تمام کتاب‌های مربوط به این موضوع رو پیدا کنی.</p>

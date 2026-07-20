@@ -25,7 +25,6 @@
         @endforeach
     </div>
 
-    <!-- دکمه های شماره صفحات -->
     <div class="mt-12 flex justify-center gap-2">
         {{ $books->links() }}
     </div>
