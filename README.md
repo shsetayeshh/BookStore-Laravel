@@ -143,6 +143,6 @@ A live demo is not currently available. Screenshots are provided to showcase the
 
 ## Author
 
-**Setayesh Shiekhi**
+**Setayesh Sheikhi**
 
 GitHub: [shsetayeshh](https://github.com/shsetayeshh)
